@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+// src/App.js
+import React, { useState } from 'react';
+import WelcomeSection from './components/WelcomeSection'
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import Preloader from './components/Preloader';
+
+library.add(fas, far, fab);
+
+const App = () => {
+  const [loaded, setLoaded] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {loaded ? (
+        <WelcomeSection />
+      ) : (
+        <Preloader onLoaded={() => setLoaded(true)} />
+      )}
+    </>
   );
-}
+};
 
 export default App;
