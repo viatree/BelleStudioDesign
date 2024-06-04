@@ -20,11 +20,13 @@ const App = () => {
 
   return (
     <>
-      {loaded ? (
+    
+
+      {/* {loaded ? (
         <WelcomeSection />
       ) : (
         <Preloader onLoaded={() => setLoaded(true)} />
-      )}
+      )} */}
     </>
   );
 };

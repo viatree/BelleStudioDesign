@@ -1,4 +1,3 @@
-// src/components/Preloader.js
 import React, { useState, useEffect } from "react";
 import "./css/Preloader.css";
 import Bcolor from "../assets/brand/LOGO UNGU.png";

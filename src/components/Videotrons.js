@@ -21,11 +21,11 @@ const Videotrons = () => {
     const camera = new THREE.PerspectiveCamera(60, container.offsetWidth / container.offsetHeight, 0.1, 1000);
     camera.position.set(0, 0, 7);
 
-    // Stats
-    const stats = new Stats();
-    stats.domElement.style.position = 'absolute';
-    stats.domElement.style.top = 0;
-    document.body.appendChild(stats.domElement);
+    // // Stats
+    // const stats = new Stats();
+    // stats.domElement.style.position = 'absolute';
+    // stats.domElement.style.top = 0;
+    // document.body.appendChild(stats.domElement);
 
     // Planes and texture loading
     const planes = [];
@@ -117,7 +117,7 @@ const Videotrons = () => {
       }
 
       renderer.render(scene, camera);
-      stats.update();
+      // stats.update();
     }
     render();
 
@@ -135,7 +135,7 @@ const Videotrons = () => {
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('click', handleClick);
       window.removeEventListener('resize', resize);
-      document.body.removeChild(stats.domElement);
+      // document.body.removeChild(stats.domElement);
       container.removeChild(renderer.domElement);
     };
   }, []);
