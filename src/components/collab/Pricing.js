@@ -3,9 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPalette, faMobileAlt, faSearch, faShoppingCart, faClock, faHeadset } from '@fortawesome/free-solid-svg-icons';
-import { workProgressData, whatYouGetData, pricingPlansData } from '../constants/index';
-import './css/Pricing.css';
-import './css/Custom.css'
+import { workProgressData, whatYouGetData, pricingPlansData } from '../../constants/index.js';
+import '../css/Pricing.css';
+import '../css/Custom.css';
 
 const iconMap = {
   palette: faPalette,

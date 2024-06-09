@@ -1,49 +1,163 @@
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url('/public/fonts/HelveticaNeueThin.otf') format('opentype');
-    font-weight: 300;
-    font-style: normal;
-}
-  
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url('/public/fonts/HelveticaNeueMedium.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
-}
-  
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url('/public/fonts/HelveticaNeueHeavy.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-}
-  
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url('/public/fonts/HelveticaNeueBold.otf') format('opentype');
-    font-weight: 700;
-    font-style: normal;
-}
-  
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url('/public/fonts/HelveticaNeueBlack.otf') format('opentype');
-    font-weight: 800;
-    font-style: normal;
-}
-
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Helvetica Neue';
 }
 
-.text-align {
-    text-align: justify;
+/* Hero Section */
+header {
+  text-align: justify;
+  height: 90vh;
 }
 
-.card {
+header .hero_img {
+  width: 450px;
+  height: 480px;
+  border: none;
+  border-radius: 0;
+  box-shadow: 11px 13px 7px #969696;
+}
+
+.client-showcase {
+  background-color: #f8f9fa;
+}
+
+.client-logo {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.client-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Ensure that logos are centered and spaced evenly */
+.client-showcase .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Our Services */
+section .srvs_img {
+  width: 450px;
+  height: 450px;
+  border: none;
+  border-radius: 0;
+  box-shadow: -11px 13px 7px #969696;
+}
+
+section .srvs_img2 {
+  width: 450px;
+  height: 450px;
+  border: none;
+  border-radius: 0;
+  box-shadow: 11px -13px 7px #969696;
+}
+
+section .srvs_img3 {
+  width: 450px;
+  height: 450px;
+  border: none;
+  border-radius: 0;
+  box-shadow: -11px 13px 7px #969696;
+}
+
+section .srvs_img4 {
+  width: 450px;
+  height: 450px;
+  border: none;
+  border-radius: 0;
+  box-shadow: 11px 13px 7px #969696;
+}
+
+section .service_content {
+  text-align: justify;
+}
+
+section .vissionMission {
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+}
+
+section .parallax {
+  height: 80vh;
+}
+
+section .vissionMission ._content {
+  background-color: transparent !important;
+}
+
+
+
+.visionMission .parallax {
+  padding: 50px 0;
+}
+
+.visionMission .content-box {
+  padding: 20px;
+}
+
+.visionMission .content-inner {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.visionMission .content-inner:hover {
+  transform: scale(1.05);
+}
+
+.font-heavy {
+  font-weight: 700;
+}
+
+
+
+
+
+/* Custom CSS for the Our Team section */
+.our-team {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.our-team h2 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.team-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-card img {
+  border-radius: 10px 10px 0 0;
+}
+
+.team-card .card-body {
+  text-align: center;
+}
+
+.team-card .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.team-card .card-text {
+  color: #6c757d;
+}
+
+/* .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
     
@@ -51,11 +165,32 @@
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     opacity: 0.8;
-}
+} */
 
-.bg_img {
-    background-image: url('https://www.pexels.com/photo/calm-body-of-lake-between-mountains-346529/');
-}
+/* .bg_img {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+  }
+  
+  .parallax-background {
+    background: url('/src/assets/parallax.jpg') cover no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(0);
+    transition: transform 0.1s ease-out;
+  }
+  
+  .parallax-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  } */
 
 .accordion-button {
     background-color: #e0e0e0;
@@ -74,4 +209,7 @@
   .accordion-body {
     background-color: #f9f9f9;
   }
+
+ 
+  
   

@@ -4,18 +4,25 @@
     font-weight: 300;
     font-style: normal;
 }
-  
+
 @font-face {
     font-family: 'Helvetica Neue';
-    src: url('/public/fonts/HelveticaNeueMedium.otf') format('opentype');
+    src: url('/public/fonts/HelveticaNeueLight.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
   
 @font-face {
     font-family: 'Helvetica Neue';
-    src: url('/public/fonts/HelveticaNeueHeavy.otf') format('opentype');
+    src: url('/public/fonts/HelveticaNeueMedium.otf') format('opentype');
     font-weight: 500;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/public/fonts/HelveticaNeueHeavy.otf') format('opentype');
+    font-weight: 600;
     font-style: normal;
 }
   
@@ -34,22 +41,38 @@
 }
 
 /* Font Styles */
-.font-light {
+.font-thin {
+    font-family: 'Helvetica Neue';
     font-weight: 300;
+    font-size: 0.8rem;
 }
   
-.font-regular {
+.font-light {
+    font-family: 'Helvetica Neue';
     font-weight: 400;
+    letter-spacing: 1.5px;
+    font-size: 1.2rem;
 }
   
 .font-medium {
+    font-family: 'Helvetica Neue';
     font-weight: 500;
+    font-size: 1.6rem;
+}
+  
+.font-heavy {
+    font-family: 'Helvetica Neue';
+    font-weight: 600;
+    letter-spacing: 1.75px;
+    font-size:  2rem;
 }
   
 .font-bold {
+    font-family: 'Helvetica Neue';
     font-weight: 700;
 }
-  
+
 .font-black {
+    font-family: 'Helvetica Neue';
     font-weight: 800;
 }

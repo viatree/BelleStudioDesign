@@ -1,3 +1,16 @@
+import heroImage from '../assets/bgBuilding.jpg';
+
+//Client Showcase Logo - AboutUs.js
+import logo1 from '../assets/logoClients/btnScarves.png';
+import logo2 from '../assets/logoClients/jatimPark.png';
+import logo3 from '../assets/logoClients/navaPark.png';
+import logo4 from '../assets/logoClients/tamanMini.png';
+import logo5 from '../assets/logoClients/gojek.png';
+
+import services2 from '../assets/graphicDesign.jpg';
+import services3 from '../assets/smm.jpg';
+import services4 from '../assets/profClass.jpg';
+
 //Our Team - AboutUs.js
 import admin1 from '../assets/team/admin1.jpg';
 import admin2 from '../assets/team/admin2.jpg';
@@ -46,15 +59,82 @@ import olistic7 from '../assets/olisticCare/olistic7.png';
 
 //Gojek Cup Details
 
+//AboutUs.js
+//Hero
 export const aboutHero = {
-  teamworkImage: require('../assets/teamwork.jpg'),
+  teamworkImage: heroImage,
   aboutUsContent: {
     title: "Who We Are",
-    description: `Belle Design Studio was founded in April 2021. It is a design firm based in Jakarta, Indonesia. we aim to provide the best visualization, design, and build services across B2B brands in both Indonesia and Singapore. 
-    We specialize in designing for exhibitions, interiors, and theme parks. Our company’s design service is known for its aesthetic solution with a touch of business consideration and consultation.`
+    description: 'Belle Design Studio was founded in April 2021. It is a design firm based in Jakarta, Indonesia. we aim to provide the best visualization, design, and build services across B2B brands in both Indonesia and Singapore. We specialize in designing for exhibitions, interiors, and theme parks. Our company’s design service is known for its aesthetic solution with a touch of business consideration and consultation.'
   }
 };
 
+//Clients Logo
+export const clientsLogo = [
+  {
+    src: logo1,
+    alt: 'Button Scarves Logo'
+  },
+  {
+    src: logo2,
+    alt: 'Jawa Timur Park Logo'
+  },
+  {
+    src: logo3,
+    alt: 'Nava Park Logo'
+  },
+  {
+    src: logo4,
+    alt: 'TMII Logo'
+  },
+  {
+    src: logo5,
+    alt: 'Gojek 2019 Logo'
+  },
+];
+
+//Our Services
+export const ourServices = {
+  servicesImg: [
+    {
+      src: navaPark1,
+      alt: 'Nava Park'
+    },
+    {
+      src: services2,
+      alt: 'Branding & Graphic Design'
+    },
+    {
+      src: services3,
+      alt: 'SMM & Digital Marketing'
+    },
+    {
+      src: services4,
+      alt: 'Professional Classes'
+    },
+  ],
+
+  servicesContent: [
+    {
+      title: 'Architecture Design',
+      description: 'We offer innovative and sustainable architecture design solutions tailored to meet the unique needs and visions of our clients. Our team ensures every project combines functionality with aesthetic appeal.'
+    },
+    {
+      title: 'Branding & Graphic Design',
+      description: 'Our branding and graphic design services help businesses establish a strong visual identity. We create compelling logos, marketing materials, and comprehensive brand strategies that resonate with target audiences.'
+    },
+    {
+      title: 'Digital Marketing & Social Media',
+      description: 'We provide digital marketing and social media services to enhance your online presence. From SEO and content creation to social media management and advertising, we help you reach and engage with your audience effectively.'
+    },
+    {
+      title: 'Professional Classes',
+      description: 'Our professional classes offer expert training and development in various fields. Designed for individuals and businesses, these classes aim to enhance skills, knowledge, and professional growth.'
+    }
+  ]
+}
+
+//Vision & Mission
 export const visionMission = [
   {
     title: "Vision",
@@ -66,6 +146,7 @@ export const visionMission = [
   }
 ];
 
+//FAQ Section
 export const frequentAQ = [
   {
     eventKey: "0",
@@ -89,7 +170,7 @@ export const frequentAQ = [
   }
 ]
 
-//Our Team Data
+//Our Team
 export const adminData = [
   {
     src: admin1,
@@ -108,6 +189,30 @@ export const adminData = [
   }
 ] 
 
+//ProjectClicked.js
+//Carousel
+export const carouselData = [
+  {
+    src: tmii1,
+    alt: 'Image 1',
+    caption: 'Caption for Image 1',
+    description: 'Description for Image 1',
+  },
+  {
+    src: navaPark1,
+    alt: 'Image 2',
+    caption: 'Caption for Image 2',
+    description: 'Description for Image 2',
+  },
+  {
+    src: olistic1,
+    alt: 'Image 3',
+    caption: 'Caption for Image 3',
+    description: 'Description for Image 3',
+  },
+];
+
+//Gallery View
 export const imageData = [
   {
     src: tmii1,

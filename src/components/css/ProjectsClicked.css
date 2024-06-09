@@ -4,6 +4,41 @@
     font-family: 'Helvetica Neue';
 }
 
+.filter_projects .nav-link {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.filter_projects .nav-link.active {
+  background-color: #007bff; /* Ganti dengan warna yang diinginkan */
+  color: white; /* Ganti dengan warna teks yang diinginkan */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-images {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.project-images.fade-out {
+  opacity: 0;
+}
+
+.project-images.fade-in {
+  opacity: 1;
+}
+
+.image-container {
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+  transform: scale(1.05);
+}
+
+
+
 .all_projects_content {
     text-align: center;
     color: #1d1d1d;

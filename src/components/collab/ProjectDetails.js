@@ -2,9 +2,9 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Carousel, Row, Col } from 'react-bootstrap';
-import { imageData, OlisticDetails, projectHeadline } from '../constants/index.js';
+import { imageData, OlisticDetails, projectHeadline } from '../../constants/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/Custom.css';
+import '../css/Custom.css';
 
 const ProjectDetails = () => {
   const { id } = useParams();
