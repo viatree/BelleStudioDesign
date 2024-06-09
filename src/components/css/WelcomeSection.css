@@ -2,13 +2,19 @@
   height: 100vh;
   text-align: center;
   overflow: hidden;
-  padding-top: 70px;
-  padding: 20px;
+  padding-top: 50px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .welcome-image-container {
   position: relative;
   display: inline-block;
+  margin: 0; /* Menghapus margin */
+  padding: 0; /* Menghapus padding */
 }
 
 .welcome-image {
@@ -91,38 +97,17 @@
 
 .canvas-container {
   position: relative;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0; 
+  padding: 0; 
 }
 
 footer {
   position: relative;
   z-index: 1;
-  padding: 20px;
-}
-
-:root {
-  --background-color: #000000;
-  --main-text-color: #ffffff;
-}
-
-body {
-  height: 100vh;
-  background: var(--background-color);
-  margin: 0;
-  color: var(--main-text-color);
-  position: relative;
-}
-
-canvas {
-  display: block;
-}
-
-.hovered {
-  cursor: pointer;
+  padding: 0;
 }

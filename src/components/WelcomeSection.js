@@ -4,16 +4,17 @@ import Footer from './Footer.js';
 import MyNavbar from './MyNavbar.js';
 import ContactUs from './ContactUs.js';
 import Spheres from './Spheres.js';
-import SpheresCount from './SpheresCount.js';
 import './css/WelcomeSection.css';
-import Boxes from './Boxes.js';
-import './css/Boxes.css';
-import Videotron from './Videotrons.js';
+import AllProject from './AllProject.js';
+import '../components/css/AllProject.css'
+import Videotron from './Videotron'
+import '../components/css/Videotron.css'
+
+
 
 const WelcomeSection = () => {
   const [animate, setAnimate] = useState(false);
   const [hideOnScroll, setHideOnScroll] = useState(false);
-  const [showSpheresCount, setShowSpheresCount] = useState(false);
 
   useEffect(() => {
     setAnimate(true);
@@ -21,10 +22,8 @@ const WelcomeSection = () => {
     const handleScroll = () => {
       if (window.scrollY > 80) {
         setHideOnScroll(true);
-        setShowSpheresCount(true);
       } else {
         setHideOnScroll(false);
-        setShowSpheresCount(false);
       }
     };
 
@@ -56,7 +55,6 @@ const WelcomeSection = () => {
             <h2>Welcome to Belle Design Studio</h2>
             <br></br>
             <h5>CREATIVE, IMMERSIVE, EXTRAORDINARY</h5>
-            <br></br>
             <p>Belle Design Studio is an Architecture Firm that helps businesses to do Branding, Events, and Advertising</p>
           </div>
           <ContactUs />
@@ -65,10 +63,9 @@ const WelcomeSection = () => {
           <div className="canvas-container">
             <Spheres />
           </div>
-      
         )}
-
       </div>
+      <AllProject/>
       <Videotron/>
       <Footer />
     </div>

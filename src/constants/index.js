@@ -1,5 +1,5 @@
 //Our Team - AboutUs.js
-import admin1 from '../assets/team/admin1.jpg';
+import admin1 from '../assets/team/admin1.jpg'
 import admin2 from '../assets/team/admin2.jpg';
 import admin3 from '../assets/team/admin3.jpg';
 
@@ -9,6 +9,7 @@ import navaPark1 from '../assets/navaPark/navaPark1.jpg';
 import btnScarves1 from '../assets/btnScarves/btnScarves1.png';
 import tanahAbang1 from '../assets/tanahAbang/tanahAbang1.png';
 import gojekCup1 from '../assets/gojekCup/gojekCup1.png';
+
 
 //Project Details - ProjectDetails.js
 //TMII Details

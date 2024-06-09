@@ -1,0 +1,15 @@
+/* src/components/css/Videotron.css */
+
+.videotron-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; /* Or any other styling you need */
+  padding: 20px;
+}
+
+.videotron-video {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  height: auto;
+}

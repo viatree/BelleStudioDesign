@@ -1,0 +1,173 @@
+  body {
+    height: 100vh;
+    margin: 0;
+    position: relative;
+  }
+  
+  canvas {
+    display: 100vw;
+    height: 100vh;
+    
+  }
+  
+  .hovered {
+    cursor: pointer;
+  }
+  
+  .popup {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .popup.show {
+    opacity: 1;
+  }
+  
+  .Project-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100vh;
+  }
+  
+  .Project-text {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    color: black;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-bottom: 0;
+  }
+  
+  .Project-text h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+  
+  .Project-text p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    color: silver;
+    white-space: pre-line;
+    padding:0;
+    margin:0;
+  }
+  
+  .popup {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .popup.show {
+    opacity: 1;
+  }
+  
+  .hovered {
+    cursor: pointer;
+  }
+  
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+  
+  .conic {
+    position: relative;
+    z-index: 0;
+    width: 100px; /* Adjusted for smaller boxes */
+    height: 100px; /* Adjusted for smaller boxes */
+    margin: 10px; /* Adjusted for spacing between boxes */
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1rem; /* Adjusted for smaller boxes */
+    border: solid 1px #b1b5c7 !important;
+    background: none !important;
+    color: #606060 !important;
+    font-family: "Roboto", sans-serif !important;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1.8px;
+    transition: all 0.25s ease !important;
+    }
+  
+  .conic:hover {
+    box-shadow: 1px 1px 8px #5d707b !important;
+    color: #a0afb7 !important;
+    text-shadow: 0 0 8px #c4ced2 !important;
+  }
+  
+  .box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 50px; /* Adjusted for positioning at the bottom */
+    width: 100%;
+  }
+  
+  .conic-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: none !important;
+    color: #606060 !important;
+    border: solid 1px #b1b5c7 !important;
+    font-family: "Roboto", sans-serif !important;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1.8px;
+    padding: 0;
+    transition: all 0.25s ease !important;
+    z-index: 10;
+    outline: none;
+  }
+  
+  .conic-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10% !important;
+    width: 60px;
+    height: 1px;
+    transform: translateY(-1px) !important;
+    background: #7c909c !important;
+    transition: all 0.25s ease !important;
+  }
+  
+  .conic-button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    width: 60px;
+    height: 1px;
+    transform: translateY(1px) !important;
+    background: #7c909c !important;
+    transition: all 0.25s ease !important;
+  }
+  
+  .conic-button:hover {
+    box-shadow: 1px 1px 8px #5d707b !important;
+    color: #a0afb7 !important;
+    text-shadow: 0 0 8px #c4ced2 !important;
+  }
